@@ -50,9 +50,6 @@ table.table a {
 
 .table-dark {
   background-color: transparent;
-  &.table-bordered {
-    border: 1px solid var(--global-divider-color) !important;
-  }
 }
 
 figure,
@@ -62,69 +59,10 @@ img {
 
 blockquote {
   background: var(--global-bg-color);
-  border-left: 5px solid var(--global-theme-color);
-  margin: 1.5em 0;
-  padding: 1em;
+  border-left: 2px solid var(--global-theme-color);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
   font-size: 1.2rem;
-
-  p {
-    margin-bottom: 0;
-  }
-
-  /* Tips, warnings, and dangers blockquotes */
-  &.block-tip {
-    border-color: var(--global-tip-block);
-    background-color: var(--global-tip-block-bg);
-
-    p {
-      color: var(--global-tip-block-text);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: var(--global-tip-block-title);
-    }
-  }
-
-  &.block-warning {
-    border-color: var(--global-warning-block);
-    background-color: var(--global-warning-block-bg);
-
-    p {
-      color: var(--global-warning-block-text);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: var(--global-warning-block-title);
-    }
-  }
-
-  &.block-danger {
-    border-color: var(--global-danger-block);
-    background-color: var(--global-danger-block-bg);
-
-    p {
-      color: var(--global-danger-block-text);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: var(--global-danger-block-title);
-    }
-  }
 }
 
 // Math
@@ -179,7 +117,7 @@ blockquote {
 .profile {
   width: 100%;
 
-  .more-info {
+  .address {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
@@ -224,6 +162,7 @@ blockquote {
     }
   }
 }
+
 
 // Navbar customization
 
@@ -279,7 +218,7 @@ blockquote {
     }
   }
 
-  .navbar-nav .nav-item.active > .nav-link {
+  .navbar-nav .nav-item.active>.nav-link {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);
@@ -387,35 +326,6 @@ blockquote {
   }
 }
 
-.wechat-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.wechat-modal > img {
-  display: block;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 33%;
-  max-width: 400px;
-  transform: translate(-50%, -50%);
-}
-
-@media only screen and (max-width: 400px) {
-  .wechat-modal > img {
-    width: 100%;
-  }
-}
 
 // Footer
 footer.fixed-bottom {
@@ -579,6 +489,7 @@ footer.sticky-bottom {
   }
 }
 
+
 // Distill
 
 .distill {
@@ -587,6 +498,7 @@ footer.sticky-bottom {
     text-decoration: none;
   }
 }
+
 
 // Projects
 
@@ -632,6 +544,7 @@ footer.sticky-bottom {
     text-align: right;
   }
 }
+
 
 // Publications
 
@@ -716,12 +629,12 @@ footer.sticky-bottom {
           }
         }
 
-        > em {
+        >em {
           border-bottom: 1px solid;
           font-style: normal;
         }
 
-        > span.more-authors {
+        >span.more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
@@ -835,6 +748,7 @@ code {
   padding: 3px 3px;
 }
 
+
 // Transitioning Themes
 html.transition,
 html.transition *,
@@ -864,6 +778,17 @@ html.transition *:after {
 
       &:hover {
         color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .post-content {
+    blockquote {
+      border-left: 5px solid var(--global-theme-color);
+      padding: 8px;
+
+      p {
+        margin-bottom: 0;
       }
     }
   }
@@ -931,14 +856,14 @@ progress::-moz-progress-bar {
   .copy {
     background: var(--global-card-bg-color);
     border-color: var(--global-bg-color);
-    border-radius: 0.3rem;
+    border-radius: .3rem;
     border-style: none;
     color: var(--global-text-color);
     font-size: medium;
     opacity: 0;
     position: absolute;
-    right: 0.2rem;
-    top: 0.2rem;
+    right: .5rem;
+    top: .5rem;
   }
 
   &:active .copy,
@@ -986,8 +911,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .dropdown-item.active,
-  .dropdown-item:active {
+  .dropdown-item.active, .dropdown-item:active {
     background-color: var(--global-hover-color);
     color: var(--global-hover-text-color) !important;
 
@@ -1001,13 +925,13 @@ progress::-moz-progress-bar {
 nav[data-toggle="toc"] {
   top: 5rem;
 
-  .nav .nav > li > a {
-    font-size: 0.75rem;
+  .nav .nav>li>a {
+    font-size: .75rem;
   }
 
-  .nav > li > a {
+  .nav>li>a {
     color: var(--global-text-color);
-    font-size: 0.75rem;
+    font-size: .75rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -1018,7 +942,7 @@ nav[data-toggle="toc"] {
   .nav-link.active {
     color: var(--global-theme-color);
     border-left-color: var(--global-theme-color);
-    font-size: 0.75rem;
+    font-size: .75rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -1034,6 +958,48 @@ nav[data-toggle="toc"] {
     visibility: hidden;
     height: 0;
     top: 0;
+  }
+}
+
+/* Tips, warnings, and dangers blockquotes */
+.post .post-content blockquote {
+  &.block-tip {
+    border-color: var(--global-tip-block);
+    background-color: var(--global-tip-block-bg);
+
+    p {
+      color: var(--global-tip-block-text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--global-tip-block-title);
+    }
+  }
+
+  &.block-warning {
+    border-color: var(--global-warning-block);
+    background-color: var(--global-warning-block-bg);
+
+    p {
+      color: var(--global-warning-block-text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--global-warning-block-title);
+    }
+  }
+
+  &.block-danger {
+    border-color: var(--global-danger-block);
+    background-color: var(--global-danger-block-bg);
+
+    p {
+      color: var(--global-danger-block-text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--global-danger-block-title);
+    }
   }
 }
 
@@ -1067,33 +1033,4 @@ nav[data-toggle="toc"] {
     margin-bottom: 0;
     padding-top: 0.5rem;
   }
-}
-
-.unloaded {
-  display: none !important;
-}
-
-.medium-zoom-overlay,
-.medium-zoom-image--opened {
-  z-index: 999;
-}
-
-#toc-sidebar {
-  z-index: 1;
-}
-
-.echarts {
-  height: 400px;
-  width: 100%;
-}
-
-.map {
-  height: 400px;
-  width: 100%;
-}
-
-swiper-container {
-  --swiper-navigation-color: var(--global-theme-color);
-  --swiper-pagination-color: var(--global-theme-color);
-  --swiper-pagination-bullet-inactive-color: var(--global-text-color);
 }

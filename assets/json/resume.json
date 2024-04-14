@@ -1,48 +1,77 @@
 {
   "basics": {
-    "name": "Jixuan Chen",
-    "label": "3rd year undergraduate student",
+    "name": "Albert Einstein",
+    "label": "Scientist",
     "image": "",
-    "email": "chenjx@smail.nju.edu.cn/jcheniq@connect.ust.hk"
+    "email": "albert@einstein.de",
+    "phone": "(912) 123-4567",
+    "url": "https://alshedivat.github.io/al-folio/",
+    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "AlbertEinstein",
+        "url": "https://twitter.com/AlbertEinstein"
+      }
+    ]
   },
+  "work": [
+    {
+      "name": "Institute for Advanced Study, Princeton University",
+      "position": "Professor of Theoretical Physics",
+      "url": "https://example.com",
+      "startDate": "1933-01-01",
+      "endDate": "1955-01-01",
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "highlights": [
+        "Relativity"
+      ]
+    }
+  ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "Nanjing University",
-      "location": "Nanjing, China",
-      "area": "Software Engineering",
-      "studyType": "undergraduate",
-      "startDate": "2021-09-01",
-      "endDate": "2025-06-30",
-      "GPA": "4.60/5.00"
+      "institution": "University of Zurich, Zurich, Switzerland",
+      "url": "https://www.uzh.ch/",
+      "area": "Software Development",
+      "studyType": "PhD",
+      "startDate": "1905-01-01",
+      "endDate": "1905-01-01",
+      "score": "",
+      "courses": [
+        "Theory of Relativity"
+      ]
     }
   ],
   "awards": [
     {
-      "title": "National Scholarship",
-      "year": "2022",
-      "summary": "Awarded to top 0.2% students nationwide in China."
+      "title": "Nobel Prize in Physics",
+      "date": "1921-11-01",
+      "awarder": "Royal Swedish Academy of Sciences",
+      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
-  "skills": [
-    {
-      "name": "Programming",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "C/C++, Python, Bash, Git, Latex, Markdown, PyTorch, Java, HTML/CSS, Fairseq"
-      ]
-    }
-  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
   "languages": [
     {
-      "language": "Manadarin",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "German",
+      "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
     }
-  ]
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
 }

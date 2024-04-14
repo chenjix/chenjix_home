@@ -14,7 +14,7 @@
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
 
   --global-tip-block: #42b983;
@@ -31,12 +31,12 @@
   --global-danger-block-title: #c00;
 
   .fa-sun {
-    display: none;
+    display : none;
   }
   .fa-moon {
     padding-left: 10px;
     padding-top: 12px;
-    display: block;
+    display : block;
   }
 
   .repo-img-light {
@@ -45,9 +45,12 @@
   .repo-img-dark {
     display: none;
   }
+  .plain-link {
+    color: black
+  }
 }
 
-html[data-theme="dark"] {
+html[data-theme='dark'] {
   --global-bg-color: #{$grey-color-dark};
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
@@ -78,10 +81,10 @@ html[data-theme="dark"] {
   .fa-sun {
     padding-left: 10px;
     padding-top: 12px;
-    display: block;
+    display : block;
   }
   .fa-moon {
-    display: none;
+    display : none;
   }
 
   .repo-img-light {
@@ -89,5 +92,8 @@ html[data-theme="dark"] {
   }
   .repo-img-dark {
     display: block;
+  }
+  .plain-link {
+    color: white;
   }
 }
